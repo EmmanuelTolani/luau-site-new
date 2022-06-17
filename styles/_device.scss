@@ -1,0 +1,80 @@
+.devices{
+    padding: 100px 50px;
+}
+.device{
+    &__title{
+        text-align: center;
+        padding: 50px 0;
+        h2{
+            text-align: center;
+            color: black;
+            margin-bottom: 30px;
+            font-size: clamp(1.8rem, 1.5273rem + 0.9091vw, 2.3rem);
+            font-weight: 600;
+            color: #027582;
+        }
+        p{
+            text-align: center;
+         font-size: 1.2rem;
+         line-height: 24px;
+        }
+    }
+    &__camera{
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2{
+            text-align: center;
+            color: black;
+            margin-bottom: 30px;
+            font-size: clamp(1.8rem, 1.5273rem + 0.9091vw, 2.3rem);
+            font-weight: 600;
+            // text-transform: uppercase;
+            color: #027582;
+        }
+       p{
+        margin-top: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+        line-height: 160%;
+        color: #707070;
+        font-size: 1rem;
+        font-weight: 500;
+       }
+    }
+    &__img{
+        // padding: 50px;
+        max-width: 60%;
+        max-height: 550px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    &__sensor{
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2{
+            text-align: center;
+            color: black;
+            margin-bottom: 30px;
+            font-size: clamp(1.8rem, 1.5273rem + 0.9091vw, 2.3rem);
+            font-weight: 600;
+            // text-transform: uppercase;
+            color: #027582;
+        }
+        p{
+            margin-top: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+        line-height: 160%;
+        color: #707070;
+        font-size: 1rem;
+        font-weight: 500;
+        }
+    }
+}

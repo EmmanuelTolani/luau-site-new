@@ -1,0 +1,178 @@
+////CaseStudy page styles
+.case-studys{
+    margin: 0 auto;
+    padding: 3rem 0;
+    background: white;
+    max-width: 1170px;
+    .case-study-1,.case-study-2, .case-study-3,.case-study-4{
+        padding: 3rem 1.5rem;
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        // flex-wrap: wrap;
+        .case-study-img{
+            width: 55%;
+            max-height: 550px;
+            
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .case-study-info{
+            padding: 1.5rem;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            width: 45%;
+            line-height: 160%;
+            h2{
+                text-align: center;
+                color: #027582;
+                margin-bottom: 30px;
+                font-size: clamp(1.8rem, 1.5273rem + 0.9091vw, 2.3rem);
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+            p{
+                font-size: clamp(0.8rem, 0.6909rem + 0.3636vw, 1rem);
+                font-weight: 200;
+                text-align: left;
+                margin-bottom: 1.5rem;
+            }
+            
+            &__button{
+                text-align: center;
+                background: #d02419;
+                color: white;
+                padding: 10px 40px;
+                cursor: pointer;
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+               
+                &:hover{
+                    cursor: pointer;
+                    background: white;
+                    a{
+                        color: #027582;
+                    }
+            }
+        }
+
+    }
+
+    }
+}
+
+@media screen and (max-width: 1025px){
+    .case-studys{
+        .case-study-1{
+            flex-direction: column;
+            .case-study-img{
+                width: auto;
+                margin-bottom: 2rem;
+            }
+            .case-study-info{
+                width: auto;
+                padding: 0 2rem;
+            }
+        }
+        .case-study-2{
+            flex-direction: column;
+            .case-study-img{
+                order: 1;
+                width: auto;
+                margin-bottom: 2rem;
+            }
+            .case-study-info{
+                padding: 0 2rem;
+                width: auto;
+                order: 2;
+            }
+        }
+        .case-study-3{
+            flex-direction: column;
+            .case-study-img{
+                width: auto;
+                margin-bottom: 2rem;
+            }
+            .case-study-info{
+                width: auto;
+                padding: 0 2rem;
+            }
+        }
+        .case-study-4{
+            flex-direction: column;
+            .case-study-img{
+                width: auto;
+                margin-bottom: 2rem;
+                order:1;
+            }
+            .case-study-info{
+                width: auto;
+                padding: 0 2rem;
+                order:2;
+            }
+        }
+    }
+    
+}
+@media screen and (max-width: 770px){
+    .case-studys{
+        .case-study-1{
+            flex-direction: column;
+            .case-study-img{
+                width: auto;
+                margin-bottom: 2rem;
+            }
+            .case-study-info{
+                width: auto;
+                padding: 0 2rem;
+            }
+        }
+        .case-study-2{
+            flex-direction: column;
+            .case-study-img{
+                order: 1;
+                width: auto;
+                margin-bottom: 2rem;
+            }
+            .case-study-info{
+                padding: 0 2rem;
+                width: auto;
+                order: 2;
+            }
+        }
+        .case-study-3{
+            flex-direction: column;
+            .case-study-img{
+                width: auto;
+                margin-bottom: 2rem;
+            }
+            .case-study-info{
+                width: auto;
+                padding: 0 2rem;
+            }
+        }
+        .case-study-4{
+            flex-direction: column;
+            .case-study-img{
+                width: auto;
+                margin-bottom: 2rem;
+                order:1;
+            }
+            .case-study-info{
+                width: auto;
+                padding: 0 2rem;
+                order:2;
+            }
+        }
+    }
+    
+}

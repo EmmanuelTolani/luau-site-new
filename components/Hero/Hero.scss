@@ -1,0 +1,18 @@
+.hero{
+    padding: 50px;
+    text-align: center;
+    font-size: clamp(3.5rem, 1.4177rem + 3.6077vw, 4.5rem);
+    letter-spacing: 3px;
+    font-weight: bold;
+    filter: contrast(1);
+    .title{
+        z-index: 100;
+    }
+}
+
+
+@media screen and (max-width:770px) {
+    .hero{
+        background-size: cover !important;
+    }   
+}

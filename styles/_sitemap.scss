@@ -1,0 +1,30 @@
+.sitemap{
+    height: auto;
+    padding: 100px 50px;
+    &__title{
+        text-align: left;
+     font-size: clamp(1.8rem, 1.5273rem + 0.9091vw, 2.3rem);
+     margin-bottom: 50px;
+     text-transform: uppercase;
+    }
+    &__links{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__link{
+        padding: 50px 0;
+        ul{
+            list-style-type: circle;
+        }
+        a{
+            text-decoration: none;
+            color: #008a99;
+        }
+    }
+    &__link-title{
+        font-size: clamp(1.4rem, 1.23rem + 0.9091vw, 1.6rem);
+        color: #d02419;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+}

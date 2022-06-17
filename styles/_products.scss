@@ -1,0 +1,185 @@
+//////Product page styles 
+.products{
+    padding: 3rem 0;
+    background: white;
+    max-width: 1170px;
+    margin: 0 auto;
+    h2{
+        text-align: center;
+        font-size: clamp(1.8rem, 1.5273rem + 0.9091vw, 2.3rem);
+        color: #027582;
+    }
+    .product-1,.product-2, .product-3{
+        padding: 3rem 1.5rem;
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        // flex-wrap: wrap;
+        .product-img{
+            width: 55%;
+            height: 550px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .product-more{
+            list-style-type: square;
+        }
+        .product-info{
+            padding: 1.5rem;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            width: 45%;
+            h2{
+                text-align: center;
+                color: black;
+                margin-bottom: 30px;
+                font-size: clamp(1.8rem, 1.5273rem + 0.9091vw, 2.3rem);
+                font-weight: 600;
+                text-transform: uppercase;
+                color: #027582;
+            }
+            p{
+                font-size: clamp(0.8rem, 0.6909rem + 0.3636vw, 1rem);
+                font-weight: 200;
+                text-align: left;
+                margin-bottom: 1.5rem;
+                color: grey;
+                line-height: 160%;
+            }
+            &__button-container{
+                display: flex;
+                gap: 25px;
+            }
+            &__button{
+                text-align: center;
+                background: #e63d02;
+               
+                padding: 10px 40px;
+                cursor: pointer;
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+               
+                &:hover{
+                    cursor: pointer;
+                    background: white;
+                    a{
+                        color: #027582;
+                    }
+                        
+                }
+            }
+            &__button1{
+                text-align: center;
+                background: #e63d02;
+                color: white;
+                padding: 10px 40px;
+                cursor: pointer;
+                &:hover{
+                    cursor: pointer;
+                    background: white;
+                    color: #027582;
+                }
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .products{
+        .product-1{
+            flex-wrap: wrap;
+            .product-img{
+                width: auto;
+                margin-bottom: 2rem;
+            }
+            .product-info{
+                width: auto;
+                padding: 0 2rem;
+            }
+        }
+        .product-2{
+            flex-wrap: wrap;
+            .product-img{
+                order: 1;
+                width: auto;
+                margin-bottom: 2rem;
+            }
+            .product-info{
+                padding: 0 2rem;
+                width: auto;
+                order: 2;
+            }
+        }
+        .product-3{
+            flex-wrap: wrap;
+            .product-img{
+                width: auto;
+                margin-bottom: 2rem;
+            }
+            .product-info{
+                width: auto;
+                padding: 0 2rem;
+            }
+        }
+    }
+    
+}
+@media screen and (max-width: 992px){
+    .products{
+        .product-1,.products-2,.product-3{
+            gap:0px;
+            margin: 20px;
+        }
+        .product-1{
+            flex-wrap: wrap;
+
+            .product-img{
+                width: auto;
+                margin-bottom: 2rem;
+            }
+            .product-info{
+                width: auto;
+                padding: 0 2rem;
+            }
+        }
+        .product-2{
+            flex-wrap: wrap;
+            .product-img{
+                order: 1;
+                width: auto;
+                // margin-bottom: 2rem;
+            }
+            .product-info{
+                padding: 0 2rem;
+                width: auto;
+                order: 2;
+            }
+        }
+        .product-3{
+            flex-wrap: wrap;
+            .product-img{
+                width: auto;
+                margin-bottom: 2rem;
+                order: 1;
+            }
+            .product-info{
+                width: auto;
+                padding: 0 2rem;
+                order: 2;
+            }
+        }
+    }
+    
+}
+

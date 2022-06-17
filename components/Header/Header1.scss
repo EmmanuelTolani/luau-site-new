@@ -1,0 +1,220 @@
+.header1 {
+  // box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+  //   rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+  //   rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top:0;
+  z-index: 200;
+  background-color: white;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1140px;
+    color: #1b1b1b;
+    position: relative;
+  }
+  &__logo{
+    .tiki{
+      max-height: 50px;
+    }
+    .logo-text{
+      max-height: 20px;
+      max-width: 200px;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: #1b1b1b;
+      font-weight: 300;
+      // font-family: 'Share', cursive;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      line-height: 1.5rem;
+      font-size: 14px;
+      cursor: pointer;
+    &:hover {
+      color: #ee7619;
+
+    }
+    &:after{
+      width: 91px;
+      
+    }
+  }
+  &__collections-nav {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+    .close-bar {
+      display: none;
+    }
+    a {
+      animation-name: slide-down;
+      animation-duration: 0.6s;
+      animation-timing-function: ease-in-out;
+      animation-delay: -0.6;
+      padding: 25px 25px 20px;
+      
+    }
+    
+    li:hover{
+      .header1__collections-nav--dropdown{
+        display: block;
+      }
+    }
+  }
+  &__collections-nav--dropdown{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    li{
+      padding: 12px 16px;
+    }
+  }
+  .mobile {
+    padding: 10px;
+    cursor: pointer;
+    .fa-solid {
+      color: black;
+      font-size: 2rem;
+    }
+  }
+  &__logo {
+    img{
+      padding-right: 10px;
+    }
+    a {
+      // animation-name: slide-right;
+      // animation-duration: 0.7s;
+      // animation-timing-function: ease-in-out;
+      font-size: clamp(.8rem, 0.8748rem + 1.318vw, 1.2rem);
+      font-family: "Oswald", sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  ///// mobile header 
+  &__menu-btn-container{
+    display: none;
+  }
+  &__menu-btn {
+    display: none;
+  }
+  &__collections-nav-mobile{
+    z-index: 1000;
+    visibility: hidden;
+    display: none;
+    position: fixed;
+    width: 100%;
+    background: #027582;;
+    padding: 10px 50px;
+    text-align: center;
+    height: 100%;
+    li {
+      padding: 20px 0;
+      text-align: center;
+      
+      cursor: pointer;
+      &:hover {
+        a {
+          color: #ee7619;
+        }
+      }
+    }
+    a {
+      text-align: center;
+      text-decoration: none;
+      color: white;
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+    &.show{
+      visibility: visible;
+      display: block;
+    }
+  }
+  .active{
+    color: #ee7619;
+    font-weight: 700;
+  }
+ 
+////animations 
+  @keyframes slide-right {
+    from {
+      transform: translate(-200px, 0);
+      opacity: 0;
+    }
+    to {
+      transform: translate(0, 0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-down {
+    from {
+      transform: translate(0, -100px);
+      opacity: 0;
+    }
+    to {
+      transform: translate(0, 0);
+      opacity: 1;
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+  .header1 {
+    &__collections-nav {
+      display: none;
+    }
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 767px) {
+  .header1 {
+    &__collections-nav {
+      display: none;
+    }
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .header1 {
+   
+    &__collections-nav {
+      display: none;
+    }
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .header1{
+    &__collections-nav {
+      display: flex;
+    }
+   .mobile{
+      display: none;
+    }
+    .tiki{
+      height: 50px;
+    }
+
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
