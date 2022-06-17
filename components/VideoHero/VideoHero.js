@@ -3,7 +3,7 @@ export default function VideoHero(props) {
     <div className="videohero__background">
       <div className="videohero__foreground">
         <video loop={true} autoPlay="autoplay" muted>
-          <source src="../src/videos/timelapse2.mp4" type="video/mp4" />
+          <source src="../src/videos/timelapse.mp4" type="video/mp4" />
         </video>
         <div className="videohero__content">
           <h3>Know Whats going on</h3>
